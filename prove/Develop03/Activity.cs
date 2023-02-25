@@ -1,9 +1,11 @@
 using System;
 
-public class activity{
+public class Activity{
     protected string _name;
     protected string _activityDescription;
     protected int _duration;
+
+    protected string _startMessage;
     
 
     public string getName(){
@@ -28,7 +30,9 @@ public class activity{
     }
 
     public string getStartMessage(){
-        string startMessage=$"Description that will display at beginning of each activity. NAME: {_name} DESCRIPTION: {_activityDescription} DURATION: {_duration} ";
-        return startMessage;
+        return _startMessage;
+    }
+    public void setStartMessage(string startMessage){
+        _startMessage=startMessage;
     }
 }
