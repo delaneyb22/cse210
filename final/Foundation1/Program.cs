@@ -42,19 +42,20 @@ namespace VideoComments
         {
             List<Video> videos = new List<Video>();
 
-            Video v1 = new Video("Introduction to C#", "John Smith", 300);
-            v1.Comments.Add(new Comment("Alice", "Great video!"));
-            v1.Comments.Add(new Comment("Bob", "Thanks for the tutorial!"));
-            v1.Comments.Add(new Comment("Charlie", "Very helpful, thanks!"));
+            Video v1 = new Video("Best Places to Visit in Idaho", "Jane Doe", 350);
+            v1.Comments.Add(new Comment("Mary", "This is awesome!"));
+            v1.Comments.Add(new Comment("Bob", "#2 is my fav!"));
+            v1.Comments.Add(new Comment("Karl", "Very helpful, thanks!"));
             videos.Add(v1);
 
-            Video v2 = new Video("C# OOP Concepts", "Jane Doe", 450);
-            v2.Comments.Add(new Comment("David", "Nice explanation of OOP!"));
-            v2.Comments.Add(new Comment("Eva", "Very informative, thanks!"));
+            Video v2 = new Video("How to camp out of your car", "Johnny Karate", 300);
+            v2.Comments.Add(new Comment("Emma", "This is so creative!"));
+            v2.Comments.Add(new Comment("Kyle", "Very descriptive and inspiring."));
             videos.Add(v2);
 
-            Video v3 = new Video("Debugging Tips in C#", "Mike Johnson", 200);
-            v3.Comments.Add(new Comment("Frank", "This saved me a lot of time!"));
+            Video v3 = new Video("Best Hiking Gear For The Mountains", "Bear Grylls", 450);
+            v3.Comments.Add(new Comment("David", "I already have some of these things, but now I know what to buy."));
+            v3.Comments.Add(new Comment("Amy", "Would you have a link for the tent you mentioned?"));
             videos.Add(v3);
 
             foreach (Video v in videos)
