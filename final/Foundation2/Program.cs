@@ -10,14 +10,14 @@ class ProductOrderingSystem
             Product product1 = new Product("Product 1", "001", 15.00, 10);
             Product product2 = new Product("Product 2", "002", 7.00, 5);
 
-            // Create some customers
+            
             Address customer1Address = new Address("100 Woodlawn St.", "Forks", "WA", "USA");
             Customer customer1 = new Customer("John Smith", customer1Address);
 
             Address customer2Address = new Address("854 Oakland Ave.", "Smallville", "ON", "Canada");
             Customer customer2 = new Customer("Jane Doe", customer2Address);
 
-            // Create some orders
+           
             Order order1 = new Order(new List<Product> { product1, product2 }, customer1);
             Order order2 = new Order(new List<Product> { product1 }, customer2);
 
